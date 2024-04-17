@@ -24,7 +24,12 @@ body {
 
 .sidebarContent {
     display: grid;
+    align-items: center;
     grid-template-columns: 2fr 8fr;
+}
+
+.sidebarContent img {
+    justify-self: center ;
 }
 
 .home {
@@ -66,6 +71,37 @@ body {
 .header {
     background-color: white;
     grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 0 4% 0 4%;
+}
+
+.topHalf {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 25fr 2fr 2fr 3fr;
+}
+
+.topHalf input {
+    justify-self: start;
+    width:85%;
+}
+
+.bottomHalf {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 16fr 2fr 2fr 2fr;
+}
+
+.bottomHalf img {
+    justify-self: end;
+}
+
+.bottomHalf .text {
+    justify-self: start;
+    padding-left: 1rem;
 }
 
 .mainContent {

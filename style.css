@@ -1,5 +1,17 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+button:active, button:focus {
+    outline: none;
 }
 
 html {
@@ -16,7 +28,7 @@ body {
 
 .sidebar {
     display: grid;
-    background-color: blue;
+    background-color: rgb(165, 255, 143);
     grid-row: 1/3;
     grid-template-rows: 1fr repeat(19, 1fr);
     align-items: center;
@@ -105,6 +117,125 @@ body {
 }
 
 .mainContent {
-    background-color: gray;
+    background-color: rgb(240, 247, 240);
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1% 2% 5% 2%;
+    column-gap: 2rem;
+}
+
+.yourProjects {
+    display: grid;
+    grid-row: 1/3;
+    grid-template-rows: 50px 1fr;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.cards > div {
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
+    grid-template-rows: 1fr 50px;
+}
+
+.Ccont {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.cards .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.cards .text {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}
+
+.cards .butn {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: end;
+    gap: 10px;
+
+}
+
+.announcements {
+    display: grid;
+    grid-column: 2/3;
+    grid-row:1/2;
+    grid-template-rows: 50px 1fr;
+    margin-bottom: 2rem;
+}
+
+.announcements .content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.sec1, .sec2 {
+    border-bottom: rgba(0, 0, 0, 0.479) 2px solid;
+}
+
+.announcements h4 {
+    margin-bottom: 5px;
+}
+
+.trending {
+    display: grid;
+    grid-column: 2/3;
+    grid-row:2/3;
+    grid-template-rows: 50px 1fr;
+}
+
+.trending .content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.content button {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.trending img {
+    justify-self: center;
+}
+
+.textWrapr {
+    display: grid;
+    justify-content: start;
+}
+
+.at {
+    text-align: start;
+    font-size: 1rem;
+    color: black;
+}
+
+.desc {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.815);
 }

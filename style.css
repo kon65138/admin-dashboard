@@ -261,10 +261,12 @@ button:hover {
     display: grid;
     grid-template-columns: 50px 50px 50px;
     justify-content: end;
-    gap: 10px;
-
+    gap: 5%;
 }
 
+.cards .butn button {
+    border-radius: 5px;
+}
 .announcements {
     display: grid;
     grid-column: 2/3;

@@ -52,6 +52,15 @@ body {
     grid-template-columns: 2fr 8fr;
 }
 
+.sidebar button {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.sidebarContent div{ 
+    justify-self: start;
+}
+
 .sidebarContent img {
     justify-self: center ;
 }
@@ -299,6 +308,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
+    border-radius: 5px;
 }
 
 .trending .imgWrapr {
